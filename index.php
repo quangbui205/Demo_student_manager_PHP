@@ -61,7 +61,7 @@ include "class/Student.php";
             case 'add':
                 include "view/create.php";
                 break;
-            case 'view':
+            case 'View':
                 include "view/list.php";
                 break;
             case 'delete':

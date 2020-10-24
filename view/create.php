@@ -3,7 +3,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = $_POST['name'];
     $email = $_POST['email'];
     $address = $_POST['address'];
-    $student = new Student($name, $email, $address);
+    $student = new studentController($name, $email, $address);
     $studentDB = new StudentDB();
     $studentDB->create($student);
     header('Location: index.php');

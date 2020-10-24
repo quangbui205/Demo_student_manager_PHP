@@ -7,9 +7,9 @@ class StudentDB
     public $connect;
     public function __construct()
     {
-        $dsn = "mysql:host=localhost;dbname=demo";
+        $dsn = "mysql:host=localhost;dbname=demoTable";
         $username = "root";
-        $password = "123456@Abc";
+        $password = "Quang@123";
         $db = new DBConnect($dsn,$username,  $password);
         $this->connect = $db->connect();
     }
